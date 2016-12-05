@@ -1,0 +1,10 @@
+version: '2'
+services:
+  gzweb:
+    build: .
+    ports:
+      - "7681:7681"
+      - "8080:8080"
+      - "11345:11345"      
+    volumes:
+     - ./.gazebo:/root/.gazebo/
